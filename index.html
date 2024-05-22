@@ -1,1 +1,194 @@
-{"commit_time": "2024-05-21T21:30:09.255423", "news": "null", "chickenGPT": "\ud83d\udc38\uff1a\u201c\u8bb0\u4f4f\uff0c\u5c0f\u9e21\ud83d\udc23\uff0c\u665a\u4e0a10\u70b9\u5403\u836f\ud83d\udc8a\u3002\u201d\n\n\u7b2c\u4e8c\u5929\u665a\u4e0a10\u70b9\uff1a\n\n\ud83d\udc38\uff1a\u201c\u5c0f\u9e21\uff0c\u5403\u836f\u4e86\uff1f\u201d\n\n\ud83d\udc23\uff1a\u201c\u5443...\u6211\u5fd8\u4e86\ud83d\ude05\u3002\u201d\n\n\ud83d\udc38\uff1a\u201c\u7b97\u4e86\uff0c\u7761\u5427\ud83d\ude34\u3002\u4e0d\u8fc7\uff0c\u660e\u5929\u8bb0\u4f4f\u60e9\u7f5a\uff1a\u5544\u6211\u7684\u820c\u5934\ud83e\udd23\uff01\u201d"}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Collection" />
+    <title>Collection</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="images/ico.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="css/theme.css" type="text/css">
+    <link rel="stylesheet" href="css/yinghua2.css">
+    <link rel="stylesheet" href="css/APlayer.min.css">
+</head>
+<body>
+	<div class="cherry"><img id="yinghua" src="images/yinghua.png" alt=""></div>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand">Collection</a>
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://x.com/genizayoi" target="view_window">ConnectMe</a>
+					</li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+        <div class="container">
+            <h class="navbar-brand">Collection</h>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://x.com/genizayoi" target="view_window">ConnectMe</a>
+					</li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="text-center filter-dark" style="background-image: url('images/58225609_p0.png');background-size:cover;background-position:center center;">
+        <div class="container" style="padding-top:1.8rem">
+            <div class="row">
+                <div class="col-md-12">
+					<div class="card-deck mb-2">
+                        <div class="card border-primary mb-2"><div class="card-header"><a class="text-muted" target="view_window" href="chickenGPT.json"><b class="text-info" id="commit_time">chickenGPT</b></a></div><div class="card-body text-primary" style="line-height: 1; margin: 0; padding-bottom:1.1rem; padding-top:0.9rem;"><b class="text-info" id="chickenGPT">chickenGPT</b></div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container" style="padding-bottom:1.5rem">
+            <div class="row">
+                <div class="col-md-12">
+					<div id="aplayer" class="mb-1"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bg-dark text-white p-0">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 mt-3 text-center">
+                    <p class="" id="Final">
+                        © Copyright <a class="text-white" target="view_window" href="https://x.com/genizayoi">Gen Izayoi</a>
+                        <br>2019/12/25 updated.
+                    </p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="text-center bg-dark" style="">
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" crossorigin="anonymous" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" crossorigin="anonymous" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"></script>
+		<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+		<script src="js/yinghua.js"></script>
+        <script>
+            fetch('chickenGPT.json')
+                .then(response => response.json())
+                .then(data => {
+                    document.getElementById('chickenGPT').innerText = data.chickenGPT;
+                    document.getElementById('commit_time').innerText = 'chickenGPT ' + data.commit_time;
+                })
+                .catch(error => console.error('Error fetching the JSON file:', error));
+        </script>
+		<script>
+			$(function(){
+				 $('.cherry').Cherry_Blossoms({
+				 is_Cherry:true,
+				 image_min:10,
+				 image_max:20,
+				 time_min:10000,
+				 time_max:20000,
+				 interval:600
+				 })
+			})
+		</script>
+        <script src="js/APlayer.min.js"></script>
+		<script>
+			const ap = new APlayer({
+				container: document.getElementById('aplayer'),
+				preload: 'metadata',
+				listFolded: false,
+				 audio:[
+				 	{
+						name:'(Cover) Carrying You',
+						artist:'Gen Izayoi',
+						url:'wav/CarryingYouCoveredbyGenIzayoi.mp3',
+						cover:'images/ms0.png'
+					},
+				 	{
+						name:'(Cover) Your Lie in April OST - Again',
+						artist:'Gen Izayoi',
+						url:'wav/YourLieinAprilOSTAgainCoveredbyGenIzayoi.mp3',
+						cover:'images/ms0.png'
+					},
+				 	{
+						name:'焦茶',
+						artist:'Gen Izayoi',
+						url:'wav/焦茶.mp3',
+						cover:'images/ms0.png'
+					},
+				 	{
+						name:'Derivative',
+						artist:'Gen Izayoi',
+						url:'wav/Derivative.mp3',
+						cover:'images/ms0.png'
+					},
+					{
+						name:'Parallel World 8-bit',
+						artist:'Gen Izayoi',
+						url:'wav/parallel_world.mp3',
+						cover:'images/ms0.png'
+					},
+					{
+						name:'Flower And Lie(Piano)',
+						artist:'Gen Izayoi',
+						url:'wav/FlowerAndLie(Piano).mp3',
+						cover:'images/ms0.png'
+					},
+					{
+						name:"A Beautiful World",
+						artist:'Gen Izayoi',
+						url:'wav/A_Beautiful_World.mp3',
+						cover:'images/ms0.png'
+					},
+					{
+						name:"Elf's Tear",
+						artist:'Gen Izayoi',
+						url:'wav/Elfs_Tear.mp3',
+						cover:'images/ms0.png'
+					},
+					{
+						name:"Traveling with frog",
+						artist:'Gen Izayoi',
+						url:'wav/Traveling_with_frog.mp3',
+						cover:'images/ms0.png'
+					},
+					{
+						name:"Kuniki Dance",
+						artist:'Gen Izayoi',
+						url:'wav/Kuniki_Dance.mp3',
+						cover:'images/ms0.png'
+					},
+					{
+						name:"Mizuki",
+						artist:'Gen Izayoi',
+						url:'wav/Mizuki.mp3',
+						cover:'images/ms0.png'
+					},
+					{
+						name:"Amaeru",
+						artist:'Gen Izayoi',
+						url:'wav/Amaeru.mp3',
+						cover:'images/ms0.png'
+					},
+					{
+						name:'Happy Birthday To You',
+						artist:'Gen Izayoi',
+						url:'wav/Happy_Birthday_To_You.mp3',
+						cover:'images/ms0.png'
+					},
+					{
+						name:'Happy Birthday To You 20190801',
+						artist:'Gen Izayoi',
+						url:'wav/Happy_Birthday_To_You20190801.mp3',
+						cover:'images/ms0.png'
+					},
+				]
+			});
+		</script>
+	</div>
+</body>
+</html>
